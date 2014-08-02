@@ -1,0 +1,16 @@
+Would include links to
+
+
+Autodesk Education Website to download Maya
+Blender.org
+
+Would include direct downloads of
+
+Each meeting's download for each crew,
+under the respective date:
+
+Example:
+
+September 10, 2014
+Art Crew: [link_name]
+Tech Crew: [lesson1]
