@@ -21,53 +21,59 @@
         <script src="scripts/blueimp-gallery.min.js"></script>
 	</head>
 	<body>
+	   <header>
+            <nav>
+                <ul class="nav">
+                    <li id="currentpage"><a href="index.html">Home</a></li>
+                    <li><a href="meetings.html">Meetings</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="showcase.html">Showcase</a></li>
+                    <li><a href="lessons.html">Lessons</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+       <div id="container">
+            <div id="content">
 
-          
+                <!-- blueimp gallery things-->
+                <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+                <div class="slides"></div>
+                <h3 class="title"></h3>
+                <a class="prev">‹</a>
+                <a class="next">›</a>
+                <a class="close">×</a>
+                <a class="play-pause"></a>
+                <ol class="indicator"></ol>
+                </div>   
+                
+                <!-- actual gallery -->
+                <div id="links">
+                            
+                    <a href="images/IMG_2354.JPG" title="blah">                         
+                        xo</a>
+                    <a href="images/projectblink.gif" title="Sunita Christiansen">                         
+                        blink animation by Suni</a>
 
-		<div id="navbar">
-			<ul class="nav">
-        		<li id="currentpage"><a href="index.html">Home</a></li>
-        		<li><a href="meetings.html">Meetings</a></li>
-        		<li><a href="about.html">About</a></li>
-        		<li><a href="faq.html">FAQ</a></li>
-        		<li><a href="showcase.html">Showcase</a></li>
-				<li><a href="lessons.html">Lessons</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</div>
-       
-        <!-- blueimp gallery things-->
-        <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
-        <div class="slides"></div>
-        <h3 class="title"></h3>
-        <a class="prev">‹</a>
-        <a class="next">›</a>
-        <a class="close">×</a>
-        <a class="play-pause"></a>
-        <ol class="indicator"></ol>
-        </div>   
+                </div>
         
-        <!-- actual gallery -->
-        <div id="links">
-                    
-            <a href="images/IMG_2354.JPG" title="blah">                         
-                xo</a>
-            <a href="images/projectblink.gif" title="Sunita Christiansen">                         
-                blink animation by Suni</a>
-
+                <!-- blueimp script-->
+                <script>
+                    document.getElementById('links').onclick = function (event) {
+                        event = event || window.event;
+                        var target = event.target || event.srcElement,
+                            link = target.src ? target.parentNode : target,
+                            options = {index: link, event: event},
+                            links = this.getElementsByTagName('a');
+                        blueimp.Gallery(links, options);
+                    };
+                </script>
+            </div>
         </div>
-        
-        <!-- blueimp script-->
-        <script>
-            document.getElementById('links').onclick = function (event) {
-                event = event || window.event;
-                var target = event.target || event.srcElement,
-                    link = target.src ? target.parentNode : target,
-                    options = {index: link, event: event},
-                    links = this.getElementsByTagName('a');
-                blueimp.Gallery(links, options);
-            };
-        </script>
+    <footer>
+        <p> &copy; Computer Animation Club 2014 </p> 
+    </footer>
         
 	</body>
 
