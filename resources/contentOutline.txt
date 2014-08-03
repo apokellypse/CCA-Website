@@ -1,0 +1,71 @@
+Navigation bar on top-
+Bootstrapper foundation css for automatic website resizability
+
+Homepage:
+  Greeting: “Hi, welcome to Cornell Computer Animation Club. We’re a group of 
+    Cornell students who meet weekly to learn animation techniques and create 
+   our own projects.”
+  Next Meeting: Stub: “Wednesdays Upson B7 Lab. Art crew and tech crew are 
+    both in B7. Fridays 5pm, Finding Nemo”
+  Announcements (ex: t-shirt design, etc.)
+  Slideshow- 
+
+About Page:
+ Use Facebook mission statement
+  “Every week we meet for an hour. Our club is split up into two crews, a tech
+     crew and an art crew. Both meetings happen at the same time and place. 
+     The tech crew focuses on 3d modeling and computer animation, and the art
+     crew works on character design, storyboarding, and concept art.”
+
+Contact:
+ For more information about the club or specific questions, email 
+   cornellca@gmail.com
+ Click this link to join our listserve.
+ Officer emails: 
+  kly24@cornell.edu Kelly Yu, President
+  kag278@cornell.edu Kyle Genova, Vice President
+  cg447@cornell.edu Christine Geeng, Treasurer
+  kkj9@cornell.edu Kelvin Jin, Secretary
+
+Meetings:
+  Short Description: Wednesdays we meet in Upson B7 Lab, Fridays Olin 165
+  Calendar below, with times which shows the meetings and topics as well as 
+  movies and which movie will be shown.
+
+Showcase:
+  Stub: Description of what we will put there/meeting pictures and art
+  
+FAQ:
+  When do we meet? 
+    Wednesdays 7:00pm, Upson B7 (regular meetings) and 
+    Fridays 5:00pm, Olin 165 (movie showings)
+  What do I have to do to join?
+    Just show up to a meeting!
+  I don't any previous animation experience. Is that okay?
+    Yes! Our weekly lessons don't require any previous knowledge.
+    We also have officers available at lessons who can get you caught up if
+    needed.
+  I have previous animation experience. Is that okay too?
+    Yes! We have resources and lessons accessible to members with more
+    experience.
+  I'd like to be on both the art and tech crews. Can I do that?
+    (See response in get_involved_description.txt)
+  What if I can't make every meeting?
+    That's fine, we have a lesson archive on our site so you don't have to
+    fall behind from missing a lesson.
+  What if I can't art? 
+    We have members who can help teach you the basics, and you can 
+    alternatively join the tech crew, which doesn't require the ability to
+    draw.
+  What sort of resources does the club have access to?  
+    We have a budget provided by the SAFC every year which allows us to 
+    buy lesson memberships, art books, and other useful art assets.
+  Which animation software do we use?
+    We primarily use Maya, but many of our members have used Blender in the 
+    past. The lab computers we use also have access to Adobe CS6. 
+  I want to partner with you guys for a project. What should I do? 
+   Send us an email at cornellanimation@gmail.com
+
+Lessons:
+  Two columns: 1 for the lesson pdfs, 1 for the zipped asset files.
+  If the art team would like downloads, it can go in a separate section below.
