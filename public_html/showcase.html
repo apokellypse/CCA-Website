@@ -20,6 +20,7 @@
 		<script src="scripts/script.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="scripts/blueimp-gallery.min.js"></script>
 	</head>
 	<body>
@@ -37,43 +38,49 @@
             </nav>
         </header>
        <div id="container">
-            <div id="content">
-                <h1>Showcase</h1>
+            <section id="content">
+                <article>
+                    <h1>Showcase</h1>
+                </article>
+                <article>
+                    <!-- blueimp gallery things-->
+                    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+                    <div class="slides"></div>
+                    <h3 class="title"></h3>
+                    <a class="prev">‹</a>
+                    <a class="next">›</a>
+                    <a class="close">×</a>
+                    <a class="play-pause"></a>
+                    <ol class="indicator"></ol>
+                    </div>   
+                    
+                    <!-- actual gallery -->
+                    <div id="links">
+                                
+                        <a href="images/IMG_2354.JPG" title="blah">                         
+                            xo</a>
+                        <a href="images/projectblink.gif" title="Sunita Christiansen">                         
+                            blink animation by Suni</a>
 
-                <!-- blueimp gallery things-->
-                <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
-                <div class="slides"></div>
-                <h3 class="title"></h3>
-                <a class="prev">‹</a>
-                <a class="next">›</a>
-                <a class="close">×</a>
-                <a class="play-pause"></a>
-                <ol class="indicator"></ol>
-                </div>   
-                
-                <!-- actual gallery -->
-                <div id="links">
-                            
-                    <a href="images/IMG_2354.JPG" title="blah">                         
-                        xo</a>
-                    <a href="images/projectblink.gif" title="Sunita Christiansen">                         
-                        blink animation by Suni</a>
-
-                </div>
-        
-                <!-- blueimp script-->
-                <script>
-                    document.getElementById('links').onclick = function (event) {
-                        event = event || window.event;
-                        var target = event.target || event.srcElement,
-                            link = target.src ? target.parentNode : target,
-                            options = {index: link, event: event},
-                            links = this.getElementsByTagName('a');
-                        blueimp.Gallery(links, options);
-                    };
-                </script>
-            </div>
+                    </div>
+            
+                    <!-- blueimp script-->
+                    <script>
+                        document.getElementById('links').onclick = function (event) {
+                            event = event || window.event;
+                            var target = event.target || event.srcElement,
+                                link = target.src ? target.parentNode : target,
+                                options = {index: link, event: event},
+                                links = this.getElementsByTagName('a');
+                            blueimp.Gallery(links, options);
+                        };
+                    </script>
+                </article>
+            </section>
+            <aside>
+            </aside>
         </div>
+
     <footer>&copy; Computer Animation Club 2014</footer>
         
 	</body>

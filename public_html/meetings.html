@@ -15,6 +15,7 @@
         <link href='http://fonts.googleapis.com/css?family=PT+Serif|Open+Sans:400italic,400' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="scripts/script.js"></script>
 	</head>
 	<body>
@@ -33,18 +34,24 @@
         </header>
 
 	<div id="container">
-		<div id="content">
-		<h1>Meetings</h1>
+		<section id="content">
+		<article>
+			<h1>Meetings</h1>
+		</article>
+		<article>
+			<p>We meet on Wednesdays in Upson B7 Lab and on Fridays in Olin 165.</p>
+			<p>Calendar below shows meeting times and topics as well as movies.</p>
 
-		<p>We meet on Wednesdays in Upson B7 Lab and on Fridays in Olin 165.</p>
-		<p>Calendar below shows meeting times and topics as well as movies.</p>
+			<div id="calendar">
+			<iframe src="https://www.google.com/calendar/embed?src=cornellanimation%40gmail.com&ctz=America/New_York" style="border: 0" width="780" height="630" frameborder="0" scrolling="no"></iframe>
+			</div>
+			</article>
+		</section>
+		<aside>
 
-		<div id="calendar">
-		<iframe src="https://www.google.com/calendar/embed?src=cornellanimation%40gmail.com&ctz=America/New_York" style="border: 0" width="840" height="630" frameborder="0" scrolling="no"></iframe>
-		</div>
-		</div>
+		</aside>
 	</div>
-
+	
 	<footer>&copy; Computer Animation Club 2014</footer>
 
 	</body>

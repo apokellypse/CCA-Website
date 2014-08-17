@@ -14,6 +14,7 @@
         <link href='http://fonts.googleapis.com/css?family=PT+Serif|Open+Sans:400italic,400' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="scripts/script.js"></script>
 	</head>
 	<body>
@@ -31,32 +32,37 @@
             </nav>
         </header>
     <div id="container">
-        <div id="content"> 
+        <section id="content"> 
+            <article>
+                <h1>Lessons</h1>
+            </article>
+            <article>
+                <p>This is where lesson PDFs and zip files can be found.</p>
+                <table class="lessons">
+                    <tr>
+                        <th></th>
+                        <th scope="col">Art Crew</th>
+                        <th scope="col">Tech Crew</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">September 10</th>
+                        <td><a href="filename.pdf">Download PDF</a>
+                            <br><a href="">Download</a></td>
+                        <td><a href="filename.zip">Download zip</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">September 17</th>
+                        <td><a href="">get</a></td>
+                        <td><a href="">get</a></td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+         <aside>
 
-        <h1>Lessons</h1>
-   	    <p>This is where lesson PDFs and zip files can be found.</p>
-
-        <table class="lessons">
-            <tr>
-                <th></th>
-                <th scope="col">Art Crew</th>
-                <th scope="col">Tech Crew</th>
-            </tr>
-            <tr>
-                <th scope="row">September 10</th>
-                <td><a href="filename.pdf">Download PDF</a>
-                    <br><a href="">Download</a></td>
-                <td><a href="filename.zip">Download zip</a></td>
-            </tr>
-            <tr>
-                <th scope="row">September 17</th>
-                <td><a href="">get</a></td>
-                <td><a href="">get</a></td>
-            </tr>
-        </table>
-        
-        </div>
+        </aside>
     </div>
+   
 
     </body>
     <footer>&copy; Computer Animation Club 2014</footer>

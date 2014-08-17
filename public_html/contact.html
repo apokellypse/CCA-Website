@@ -14,6 +14,7 @@
         <link href='http://fonts.googleapis.com/css?family=PT+Serif|Open+Sans:400italic,400' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="scripts/script.js"></script>
     </head>
     <body>
@@ -32,80 +33,84 @@
         </header>
 
     <div id="container">
-        <div id="content">
-        
-        <h1> Contact </h1>
-        <p> For more information about the club or specific questions, email <a href="mailto:cornellca@gmail.com"> cornellca@gmail.com </a> </p>
+        <section id="content">
+        <article> 
+            <h1> Contact </h1>
+        </article>
+        <article>
+            <p> For more information about the club or specific questions, email <a href="mailto:cornellca@gmail.com"> cornellca@gmail.com </a> </p>
 
-        <p> Officer Emails: </p>
-            <ul>
-                <li> Kelly Yu, President: <a href="mailto:kly24@cornell.edu"> kly24@cornell.edu </a> </li>
-                <li> Kyle Genova, Vice President: <a href="mailto:kag278@cornell.edu"> kag278@cornell.edu </a> </li>
-                <li> Christine Geeng, Treasurer: <a href="mailto:cg447@cornell.edu"> cg447@cornell.edu </a> </li>
-                <li> Kelvin Jin, Secretary: <a href="mailto:kkj9@cornell.edu"> kkj9@cornell.edu </a> </li>
-            </ul>
+            <p> Officer Emails: </p>
+                <ul>
+                    <li> Kelly Yu, President: <a href="mailto:kly24@cornell.edu"> kly24@cornell.edu </a> </li>
+                    <li> Kyle Genova, Vice President: <a href="mailto:kag278@cornell.edu"> kag278@cornell.edu </a> </li>
+                    <li> Christine Geeng, Treasurer: <a href="mailto:cg447@cornell.edu"> cg447@cornell.edu </a> </li>
+                    <li> Kelvin Jin, Secretary: <a href="mailto:kkj9@cornell.edu"> kkj9@cornell.edu </a> </li>
+                </ul>
 
-        <h1>ListServ</h1>
-        <p> Fill out the form below to join our listserv:
-            <form action="https://www.list.cornell.edu:9443/subscribe/subscribe.tml" method="POST">
-                <table>
-                    <tr>
-                        <td>Email address:</td>
-                        <td>
-                            <input type="text" name="email" value="" SIZE=20>
-                                </td>
-                        <td>
-                            <input type="image" title="subscribe" alt="subscribe" src="https://www.list.cornell.edu:9443/img/english/button_subscribe.gif" name="subscribe">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><I>(required)</I> Your name:</td>
-                        <td>
-                            <INPUT TYPE="text" NAME="name" VALUE="" SIZE=20 MAXLENGTH=100>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><I>(required)</I> Set Your Password:</td>
-                        <td>
-                            <INPUT TYPE="password" NAME="pw" VALUE="" SIZE=20 MAXLENGTH=100>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Verify Your Password:</td>
-                        <td>
-                            <INPUT TYPE="password" NAME="pwv" VALUE="" SIZE=20 MAXLENGTH=100>
-                        </td>
-                    </tr>
-                </table>
-                <input type="hidden" name="list" value="computer-animation-club-l">
-                <input type="hidden" name="name_required" value="T">
-                <input type="hidden" name="pw_required" value="T">
-                <input type="hidden" name="confirm" value="one">
-                <input type="hidden" name="showconfirm" value="T">
-            </form> 
-        </p>
-        <p> (Don't) use this form to unsubscribe:
-            <form action="https://www.list.cornell.edu:9443/subscribe/unsubscribe.tml" method="GET">
-                <table>
-                    <tr>
-                        <td>Email address:</td>
-                        <td>
-                            <input type="text" name="email" value="" size=20>
-                        </td>
-                        <td>
-                            <input type="image" border="0" height="19" width="84" title="unsubscribe" alt="unsubscribe" src="https://www.list.cornell.edu:9443/img/english/button_unsubscribe.gif"  name="unsubscribe">
-                        </td>
-                    </tr>
-                </table>
-                <input type="hidden" name="email_notification" value="T">
-                <input type="hidden" name="confirm_first" value="T">
-                <input type="hidden" name="showconfirm" value="T">
-                <input type="hidden" name="lists" value="computer-animation-club-l">
-            </form> 
-        </p>
-       
-        </div>
+            <h2>ListServ</h2>
+            <p> Fill out the form below to join our listserv:
+                <form action="https://www.list.cornell.edu:9443/subscribe/subscribe.tml" method="POST">
+                    <table>
+                        <tr>
+                            <td>Email address:</td>
+                            <td>
+                                <input type="text" name="email" value="" SIZE=20>
+                                    </td>
+                            <td>
+                                <input type="image" title="subscribe" alt="subscribe" src="https://www.list.cornell.edu:9443/img/english/button_subscribe.gif" name="subscribe">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><I>(required)</I> Your name:</td>
+                            <td>
+                                <INPUT TYPE="text" NAME="name" VALUE="" SIZE=20 MAXLENGTH=100>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><I>(required)</I> Set Your Password:</td>
+                            <td>
+                                <INPUT TYPE="password" NAME="pw" VALUE="" SIZE=20 MAXLENGTH=100>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Verify Your Password:</td>
+                            <td>
+                                <INPUT TYPE="password" NAME="pwv" VALUE="" SIZE=20 MAXLENGTH=100>
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="hidden" name="list" value="computer-animation-club-l">
+                    <input type="hidden" name="name_required" value="T">
+                    <input type="hidden" name="pw_required" value="T">
+                    <input type="hidden" name="confirm" value="one">
+                    <input type="hidden" name="showconfirm" value="T">
+                </form> 
+            </p>
+            <p> (Don't) use this form to unsubscribe:
+                <form action="https://www.list.cornell.edu:9443/subscribe/unsubscribe.tml" method="GET">
+                    <table>
+                        <tr>
+                            <td>Email address:</td>
+                            <td>
+                                <input type="text" name="email" value="" size=20>
+                            </td>
+                            <td>
+                                <input type="image" border="0" height="19" width="84" title="unsubscribe" alt="unsubscribe" src="https://www.list.cornell.edu:9443/img/english/button_unsubscribe.gif"  name="unsubscribe">
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="hidden" name="email_notification" value="T">
+                    <input type="hidden" name="confirm_first" value="T">
+                    <input type="hidden" name="showconfirm" value="T">
+                    <input type="hidden" name="lists" value="computer-animation-club-l">
+                </form> 
+            </p>
+        </article>
+        </section>
+        <aside>
+        </aside>
     </div>
-<footer>&copy; Computer Animation Club 2014</footer>
+    <footer>&copy; Computer Animation Club 2014</footer>
     </body>
 </html>
