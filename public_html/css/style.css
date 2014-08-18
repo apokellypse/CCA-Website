@@ -172,20 +172,42 @@ nav > ul > li {
 	color: #636363;
 }
 
+ul.news > li {
+	list-style-type: disc;
+	font-weight: bold;
+}
+
+ul.news > li > ul > li {
+	display: block;
+	font-weight: normal;
+}
+
 ul > li {
 	font-family: 'Open Sans', Arial, sans-serif;
 	font-size: 1.2em;
+	line-height: 2em;
+	list-style-type: none;
 }
 
 ul > li > ul > li {
+	margin-left: 30px;
 	list-style-type: none;
-	font-size: 0.8em;
-	font-family: 'Open Sans', Arial, sans-serif;
-	color: #555555;
+	font-size: 1em;
+	line-height: 1.5em;
+	font-family: 'PT Serif', Times, serif;
+	/*color: #555555;*/
+	display: none;
 }
 
 ul > li > ul > li:last-child {
 	margin-bottom: 15px;
+}
+
+span.expand {
+	display: inline-block;
+	padding-right: 20px;
+	/*font-weight: bold;*/
+	font-size: 1.3em;
 }
 
 p {
@@ -212,17 +234,28 @@ form > table {
 }
 
 form > table > tbody > tr > td {
-	font-size: 0.9em;
+	font-size: 1.1em;
+	width: 300px;
+	padding: 1px 10px;
+	font-weight: normal;
 }
 
 td, th {
-	font-weight: normal;
-	padding: 1px 10px;
-	width: 150px;
+	/*font-weight: normal;*/
+	padding: 30px 10px;
+	width: 270px;
+	font-family: 'Open Sans', Arial, sans-serif;
 }
+
+th {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
 
 td {
 	font-family: 'PT Serif', Times, serif;
+	font-size: 1.2em;
 }
 
 table.lessons tr:nth-child(odd) > td, table.lessons tr:nth-child(odd) {
