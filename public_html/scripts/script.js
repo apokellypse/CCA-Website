@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	console.log("Welcome to the Cornell Computer Animation Club website.\nAssuming you're interested in how it's put together, we're currently looking for a person to\nhelp the officers maintin the website and keep it updated. Let us know if you're interested.")
-	$('aside').css("height", $(document).height()-160);
+	// $('aside').css("height", $(document).height()-160);
 
 	$('article > ul > li').click(function() {
 		var ind = $(this).index() + 1;

@@ -20,6 +20,7 @@ header > nav {
 	background-color: #0b6c73;
 	color: gray;
 	margin-top: 40px;
+	position: fixed;
 	/*text-transform: uppercase;*/
 }
 
@@ -69,7 +70,7 @@ header > nav > ul > li {
 ul.nav {
 	margin: 0px;
 	padding: 0px;
-	margin-top: 30px;
+	/*margin-top: 30px;*/
 }
 
 ul.news {
@@ -97,16 +98,16 @@ ul.nav > li:hover {
 	text-align: left;
 	padding: 10px 20px;
 	padding-bottom: 40px;
-	margin: 120px 15px 40px 0;
+	margin: 150px 15px 40px 0;
 	float: right;
-	background: #C58888;
+	background: #69aadd;
 }
 
 #content a:link,
 #content a:visited,
 #content a:active,
 #content a:focus {
-	color: maroon;
+	color: #0b6c73;
 }
 
 #content a:hover {
@@ -122,19 +123,19 @@ article {
 }
 
 article:nth-child(n+2) {
+	margin-top: 5px;
 	width: 780px;
 	background: #f2f2f2;
 	padding: 20px;
 }
 
 h1 {
-	background: #C52C2C;
+	background: #eb5252;
 	padding: 20px;
 	padding-bottom: 0px;
-	padding-top: 20px;
 	width: 860px;
+	right: 40px;
 	position: relative;
-	right: 35px;
 	color: #FFF9F9;
 	font-family: 'Cabin Sketch', 'Times New Roman', 'serif';
 	font-size: 2.2em;
@@ -152,6 +153,8 @@ aside {
 	width: 370px; /*max is 380px*/
 	background: #363636;
 	padding-top: 120px;
+	height: 100%;
+	position: fixed;
 }
 
 a {
